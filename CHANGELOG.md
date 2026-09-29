@@ -1,6 +1,26 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/ai/compare/v1.0.0...1.x)
+## [Unreleased](https://github.com/laravel/ai/compare/v1.0.1...1.x)
+
+## [v1.0.1](https://github.com/laravel/ai/compare/v1.0.0...v1.0.1) - 2026-09-29
+
+### What's Changed
+
+* Remove unused and redundant provider code by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/ai/pull/1063
+* Announce a tool call before its approval request by [@SantosVilanculos](https://github.com/SantosVilanculos) in https://github.com/laravel/ai/pull/1070
+* Share local and stored file content through traits by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/ai/pull/1066
+* Add Ai::build() for on-demand provider configuration by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/ai/pull/1071
+* Add a Collection decide macro for choosing an item by [@taylorotwell](https://github.com/taylorotwell) in https://github.com/laravel/ai/pull/1073
+* Migration from Mockery to Double by [@jasonmccreary](https://github.com/jasonmccreary) in https://github.com/laravel/ai/pull/1061
+* Improve remote file fetching by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/ai/pull/1082
+* Settle pending calls for tools that cannot request approval by [@pushpak1300](https://github.com/pushpak1300) in https://github.com/laravel/ai/pull/1083
+
+### New Contributors
+
+* [@SantosVilanculos](https://github.com/SantosVilanculos) made their first contribution in https://github.com/laravel/ai/pull/1070
+* [@jasonmccreary](https://github.com/jasonmccreary) made their first contribution in https://github.com/laravel/ai/pull/1061
+
+**Full Changelog**: https://github.com/laravel/ai/compare/v1.0.0...v1.0.1
 
 ## [v1.0.0](https://github.com/laravel/ai/compare/v0.11.2...v1.0.0) - 2026-09-23
 
