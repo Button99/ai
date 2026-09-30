@@ -23,6 +23,14 @@ class TypeSafeGateway implements ClassificationGateway
     }
 
     /**
+     * Get the answering model, preferring the checkpoint a routing server such as laya-serve chose.
+     */
+    protected function answeringModel(array $data, string $model): string
+    {
+        return $data['routing']['model'] ?? $data['model'] ?? $model;
+    }
+
+    /**
      * Get an HTTP client for the TypeSafe API.
      */
     protected function client(ClassificationProvider $provider, int $timeout = 30): PendingRequest

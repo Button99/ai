@@ -175,6 +175,18 @@ test('classification requests use the configured base url', function (): void {
     Http::assertSent(fn (Request $request): bool => $request->url() === 'http://localhost:8080/v1/systemone');
 });
 
+test('the routed checkpoint is reported as the answering model', function (): void {
+    Http::fake(['*' => Http::response([
+        ...fakeTypeSafeResponse(),
+        'model' => 'laya-rl-agent',
+        'routing' => ['model' => 'english', 'reason' => 'English Latin text'],
+    ])]);
+
+    $response = Classification::of('text')->question('is_urgent', new Boolean('Urgent?'))->classify(provider: 'typesafe');
+
+    expect($response->meta->model)->toBe('english');
+});
+
 test('provider options may not override the core classification payload', function (): void {
     Http::fake(['*' => Http::response(fakeTypeSafeResponse())]);
 
