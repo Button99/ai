@@ -71,6 +71,7 @@ dataset('classification-providers', [
 dataset('agent-providers', [
     'anthropic' => ['anthropic', 'ANTHROPIC_API_KEY', 'claude-haiku-4-5-20251001'],
     'azure' => ['azure', 'AZURE_OPENAI_API_KEY', 'gpt-5.4-mini'],
+    'cohere' => ['cohere', 'COHERE_API_KEY', 'command-a-03-2025'],
     'deepseek' => ['deepseek', 'DEEPSEEK_API_KEY', 'deepseek-v4-pro'],
     'gemini' => ['gemini', 'GEMINI_API_KEY', 'gemini-3.5-flash-lite'],
     'groq' => ['groq', 'GROQ_API_KEY', 'openai/gpt-oss-20b'],
@@ -97,6 +98,7 @@ dataset('agent-image-providers', [
     'openai' => ['openai', 'OPENAI_API_KEY', 'gpt-6-luna'],
     'gemini' => ['gemini', 'GEMINI_API_KEY', 'gemini-3.1-flash-lite'],
     'xai' => ['xai', 'XAI_API_KEY', 'grok-4.20-non-reasoning'],
+    'cohere' => ['cohere', 'COHERE_API_KEY', 'command-a-vision-07-2025'],
 ]);
 
 dataset('tool-replay-providers', [
@@ -118,6 +120,7 @@ dataset('reasoning-providers', [
     'openai' => ['openai', 'OPENAI_API_KEY', 'gpt-6-luna', ['reasoning' => ['effort' => 'high', 'summary' => 'auto']]],
     'gemini' => ['gemini', 'GEMINI_API_KEY', 'gemini-3.5-flash', ['thinking_level' => 'high', 'thinking_summaries' => 'auto']],
     'xai' => ['xai', 'XAI_API_KEY', 'grok-4.6', ['reasoning' => ['summary' => 'auto']]],
+    'cohere' => ['cohere', 'COHERE_API_KEY', 'command-a-reasoning-08-2025', ['thinking' => ['type' => 'enabled']]],
     'deepseek' => ['deepseek', 'DEEPSEEK_API_KEY', 'deepseek-reasoner', []],
     'groq' => ['groq', 'GROQ_API_KEY', 'openai/gpt-oss-20b', []],
     'mistral' => ['mistral', 'MISTRAL_API_KEY', 'magistral-medium-latest', []],
